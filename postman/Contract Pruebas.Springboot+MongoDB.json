@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "4e0fee67-d77b-4326-9061-6338ae6367f9",
+		"name": "Contract Testing",
+		"description": "# About this collection\n\nThis collection helps you set up contract tests to ensure that two separate systems are compatible and can communicate with one another.\n\n## **Using the collection**\n\n**Step 1:** Send the sample requests and view the response and test results.\n\n**Step 2:** Replace the sample request URLs with your desired API endpoints.\n\n**Step 3:** Customize the tests in the \"Tests\" tab if needed. Don't forget to save your changes.\n\n### Resources\n\n[Scripting in Postman](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/)\n\n[Test script examples](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/)\n\n[Postman Sandbox API reference](https://learning.postman.com/docs/sending-requests/grpc/postman-sandbox-api/#writing-assertions)\n\n[Using the Collection Runner](https://learning.postman.com/docs/collections/running-collections/intro-to-collection-runs/)\n\n[  \n](https://postman.postman.co/documentation/24552533-5bead607-0197-4e1d-87d4-3160bc7631c1?entity=&branch=&version=)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12488878",
+		"_collection_link": "https://restless-crater-527923.postman.co/workspace/NegocialoX~32de7154-4da7-437a-8fc6-35ac74a81e24/collection/12488878-4e0fee67-d77b-4326-9061-6338ae6367f9?action=share&source=collection_link&creator=12488878"
+	},
+	"item": [
+		{
+			"name": "Supermercado-ListarTodo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/supermercado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"supermercado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supermercado-ListarXnombre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/supermercado/item/ColunLeche",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"supermercado",
+						"item",
+						"ColunLeche"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supermercado-ListarXcategoria",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/supermercado/categoria/Lacteos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"supermercado",
+						"categoria",
+						"Lacteos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supermercado-EliminarItemxNombre",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/supermercado/item/ColunLeche/del",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"supermercado",
+						"item",
+						"ColunLeche",
+						"del"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supermercado-EliminarItemxId",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/supermercado/item/6511a0b0b2899644de81f903/delid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"supermercado",
+						"item",
+						"6511a0b0b2899644de81f903",
+						"delid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supermercado-ActualizarCategoria",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/supermercado/categoria/Cereales/actualizar/Arroz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"supermercado",
+						"categoria",
+						"Cereales",
+						"actualizar",
+						"Arroz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertarSupermercadoItem",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"CaloLecheChocolate\",\r\n    \"cantidad\":50,\r\n    \"categoria\":\"Lacteos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/supermercado/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"supermercado",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Response",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Validate that the response code should be 200",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Validate that the response is json object",
+							"pm.test(\"Response is a json object\", function () {",
+							"    pm.expect(pm.response.json()).to.be.an('object');",
+							"});",
+							"",
+							"// Validate that the response has an arg object",
+							"pm.test(\"Response to have 'arg' object\", function () {",
+							"    pm.expect(pm.response.json()).to.have.property('args');",
+							"});",
+							"",
+							"// Validate that the response has headers object",
+							"pm.test(\"Response to have 'headers' object\", function () {",
+							"    pm.expect(pm.response.json()).to.have.property('headers');",
+							"});",
+							"",
+							"// Validate that the response has url property",
+							"pm.test(\"Response to have 'url' property\", function () {",
+							"    pm.expect(pm.response.json()).to.have.property('url');",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "foo1",
+							"value": "bar1"
+						},
+						{
+							"key": "foo2",
+							"value": "bar2"
+						}
+					]
+				},
+				"description": "The tests in this request validate that:\n\n- the response code is 200\n- the response is a JSON object\n- the response has an 'arg' object\n- the response has 'headers' object\n- the response has a 'URL' property"
+			},
+			"response": []
+		},
+		{
+			"name": "Check for Valid Form Data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const json = pm.response.json();\r",
+							"\r",
+							"// Validate raw body sent in the request, be it form-data or JSON\r",
+							"pm.test(\"`form` should contain the correct form data\", function () {\r",
+							"    pm.expect(json.form).to.be.an('object');\r",
+							"    pm.expect(json.form.foo1).to.eql('bar1');\r",
+							"    pm.expect(json.form.foo2).to.eql('bar2');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "foo1",
+							"value": "bar1",
+							"type": "text"
+						},
+						{
+							"key": "foo2",
+							"value": "bar2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/post",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"post"
+					]
+				},
+				"description": "The tests in this request validate that the request body sent as form-data is valid."
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://postman-echo.com"
+		}
+	]
+}
